@@ -1,0 +1,32 @@
+name: 🧩 New skill
+description: Propose a skill for the Legion skills registry
+labels: ["skill", "triage"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Skill name
+      placeholder: "terraform, rate-limiting, react-server-components"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [frontend, backend, cloud, data, security, process, domain]
+    validations:
+      required: true
+  - type: input
+    id: agents
+    attributes:
+      label: Which agents should own it?
+      placeholder: "FORGE, STRATUS"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it teach the agents?
+      description: Key patterns, pitfalls and when to apply it. Specific beats generic.
+    validations:
+      required: true

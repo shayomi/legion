@@ -1,0 +1,361 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-09-01",
+  "skills": {
+    "react": {
+      "category": "frontend",
+      "agents": [
+        "frontend"
+      ],
+      "confidence": 1,
+      "source": "core"
+    },
+    "typescript": {
+      "category": "language",
+      "agents": [
+        "frontend",
+        "backend"
+      ],
+      "confidence": 1,
+      "source": "core"
+    },
+    "system-design": {
+      "category": "architecture",
+      "agents": [
+        "cto",
+        "solutions-architect"
+      ],
+      "confidence": 1,
+      "source": "core"
+    },
+    "threat-modelling": {
+      "category": "security",
+      "agents": [
+        "cyber"
+      ],
+      "confidence": 1,
+      "source": "core"
+    },
+    "obsidian": {
+      "category": "knowledge",
+      "agents": [
+        "knowledge"
+      ],
+      "confidence": 1,
+      "source": "core"
+    },
+    "notion": {
+      "category": "knowledge",
+      "agents": [
+        "knowledge"
+      ],
+      "confidence": 1,
+      "source": "core"
+    },
+    "zettelkasten": {
+      "category": "knowledge",
+      "agents": [
+        "knowledge"
+      ],
+      "confidence": 1,
+      "source": "core"
+    },
+    "next-js": {
+      "category": "frontend",
+      "agents": [
+        "frontend",
+        "backend"
+      ],
+      "confidence": 0.8,
+      "source": "project-learnt"
+    },
+    "strapi-to-supabase-user-migration": {
+      "category": "backend",
+      "agents": [
+        "backend",
+        "data"
+      ],
+      "confidence": 1,
+      "source": "project-learnt"
+    },
+    "python": {
+      "category": "language",
+      "agents": [
+        "backend",
+        "data-engineer"
+      ],
+      "confidence": 0.8,
+      "source": "project-learnt"
+    },
+    "javascript": {
+      "category": "language",
+      "agents": [
+        "frontend",
+        "backend"
+      ],
+      "confidence": 0.8,
+      "source": "project-learnt"
+    },
+    "docker": {
+      "category": "devops",
+      "agents": [
+        "devops",
+        "cloud"
+      ],
+      "confidence": 0.8,
+      "source": "project-learnt"
+    },
+    "agent-reach": {
+      "category": "research",
+      "agents": [
+        "oracle",
+        "nexus",
+        "signal",
+        "forge"
+      ],
+      "confidence": 0.95,
+      "source": "project-learnt"
+    },
+    "glue-layer-tool-pattern": {
+      "category": "architecture",
+      "agents": [
+        "titan",
+        "forge",
+        "blueprint",
+        "cipher",
+        "conduit"
+      ],
+      "confidence": 0.9,
+      "source": "project-learnt"
+    },
+    "impeccable-design-system": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "titan",
+        "compass",
+        "lens",
+        "blueprint"
+      ],
+      "confidence": 0.9,
+      "source": "project-learnt"
+    },
+    "ai-design-antipattern-detection": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "aegis",
+        "lens",
+        "probe"
+      ],
+      "confidence": 0.9,
+      "source": "project-learnt"
+    },
+    "multi-harness-skill-distribution": {
+      "category": "devops",
+      "agents": [
+        "conduit",
+        "forge",
+        "blueprint",
+        "titan"
+      ],
+      "confidence": 0.9,
+      "source": "project-learnt"
+    },
+    "llm-instruction-authoring": {
+      "category": "process",
+      "agents": [
+        "titan",
+        "memory",
+        "lens",
+        "aegis",
+        "compass"
+      ],
+      "confidence": 0.9,
+      "source": "project-learnt"
+    },
+    "component-folder-architecture": {
+      "category": "frontend",
+      "agents": [
+        "frontend",
+        "reviewer",
+        "cto"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "apple-design": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "titan",
+        "compass",
+        "lens"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "emil-design-eng": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "lens",
+        "titan"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "animate": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "lens"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "animate-expo": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "lens"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "review-animations": {
+      "category": "frontend",
+      "agents": [
+        "lens",
+        "prism",
+        "aegis"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "improve-animations": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "lens"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "find-animation-opportunities": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "probe"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "animation-vocabulary": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "compass"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "prototype": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "compass"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "pick-ui-library": {
+      "category": "frontend",
+      "agents": [
+        "prism",
+        "blueprint"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "ask-sonner": {
+      "category": "frontend",
+      "agents": [
+        "prism"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    },
+    "write-swift": {
+      "category": "language",
+      "agents": [
+        "forge",
+        "prism"
+      ],
+      "confidence": 0.9,
+      "source": "user-taught"
+    }
+  },
+  "learning_log": [
+    {
+      "date": "2026-05-06",
+      "skill": "next-js",
+      "source": "Detected by scanner in project"
+    },
+    {
+      "date": "2026-05-18",
+      "skill": "strapi-to-supabase-user-migration",
+      "source": "Learned during single-user migration with password hash preservation"
+    },
+    {
+      "date": "2026-06-11",
+      "skill": "python",
+      "source": "Detected by scanner in project"
+    },
+    {
+      "date": "2026-06-11",
+      "skill": "javascript",
+      "source": "Detected by scanner in project"
+    },
+    {
+      "date": "2026-06-11",
+      "skill": "docker",
+      "source": "Detected by scanner in project"
+    },
+    {
+      "date": "2026-08-01",
+      "skill": "agent-reach",
+      "source": "Studied Agent-Reach repo: installer/doctor/config router giving agents read+search access to ~15 internet platforms via multi-backend routing"
+    },
+    {
+      "date": "2026-08-01",
+      "skill": "glue-layer-tool-pattern",
+      "source": "Distilled the reusable installer+doctor+router architecture from full Agent-Reach codebase read (probe/health-check, read-only doctor, explicit-cred discipline, env-aware install)"
+    },
+    {
+      "date": "2026-08-08",
+      "skill": "impeccable-design-system",
+      "source": "Full read of pbakaus/impeccable: 23-command design skill, Persuade/Operate/Read/Experience modes, web/ios/android/adaptive platform axis, external concept roll, craft floor, two-tier artifact staleness, live variant mode"
+    },
+    {
+      "date": "2026-08-08",
+      "skill": "ai-design-antipattern-detection",
+      "source": "Read cli/engine/: 59 slop+quality rules across regex/jsdom/browser/visual engines, dual-adapter pattern, fixture-first TDD order, four-level suppression model, immediate vs deferred hook tiers"
+    },
+    {
+      "date": "2026-08-08",
+      "skill": "multi-harness-skill-distribution",
+      "source": "Read scripts/build.js + transformers: one SKILL.src.md fanned to 16 harnesses via provider-tagged blocks, committed-generated-output policy, count/version/manifest build validators, per-component release tagging"
+    },
+    {
+      "date": "2026-08-08",
+      "skill": "llm-instruction-authoring",
+      "source": "Distilled skill/ + docs/STYLE.md + tests/skill-behavior: late-loading playbooks, deprecation-with-reason, named model ruts, bounded verification ceilings, fork_turns:0 review, CI prose gates, trace-asserting multi-provider behavior tests"
+    },
+    {
+      "date": "2026-09-01",
+      "skill": "emil-design-engineering-collection",
+      "source": "Installed 12-skill design/motion collection to ~/.agents/skills (Emil Kowalski design-engineering set): apple-design (WWDC Designing Fluid Interfaces distilled to web - interruptibility, velocity handoff, momentum projection, rubber-banding, materials/depth, optical typography), emil-design-eng craft philosophy, animate/animate-expo implementation, review/improve/find-animation analysis tier, prototype + pick-ui-library + ask-sonner + write-swift. 3 skills (review-animations, prototype, pick-ui-library) carry disable-model-invocation:true and require explicit invocation."
+    }
+  ]
+}

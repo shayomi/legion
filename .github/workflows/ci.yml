@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Typecheck & hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Validate JSON registries
+        run: |
+          for f in core/registry/agents.json core/skills/registry.json .legion/manifest.json .claude/settings.json; do
+            node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))" || { echo "::error file=$f::Invalid JSON"; exit 1; }
+          done
+
+      - name: No personal paths or private data
+        run: |
+          # Absolute home-directory paths (placeholders like /Users/you are fine)
+          if git grep -nE '(/Users|/home)/[A-Za-z0-9_.-]+/' -- . ':!.github/workflows/ci.yml' \
+             | grep -vE '/(Users|home)/(you|yourname|username|runner)/'; then
+            echo "::error::Absolute personal paths found. Use relative paths or env vars."; exit 1
+          fi
+          # Files that should never be committed
+          if git ls-files | grep -E '(^|/)\.env$|\.sql$|\.pem$|\.key$|^memory/daily-logs/|^memory/agent-reports/'; then
+            echo "::error::Private or data files are tracked. Check .gitignore."; exit 1
+          fi
+
+      - name: CLI smoke test
+        run: npx tsx src/scripts/legion.ts agents

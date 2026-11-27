@@ -1,0 +1,36 @@
+name: 🐛 Bug report
+description: Something in Legion isn't working as expected
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `legion scan` in a Next.js project
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command / slash command / file involved
+      placeholder: "legion scan, /legion-review, src/scripts/scan.ts"
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "OS, Node version, Claude Code version"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output / logs
+      description: Remove any personal paths, client names or secrets before pasting.
+      render: shell

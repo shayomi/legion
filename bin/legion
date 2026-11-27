@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+const { spawnSync } = require('child_process');
+const path = require('path');
+const fs = require('fs');
+
+// Always resolve relative to THIS file's location (legion/bin/)
+const LEGION_ROOT = path.resolve(__dirname, '..');
+const tsx = path.join(LEGION_ROOT, 'node_modules', '.bin', 'tsx');
+const script = path.join(LEGION_ROOT, 'src', 'scripts', 'legion.ts');
+
+// Verify tsx exists
+if (!fs.existsSync(tsx)) {
+  console.error('\x1b[31mError: tsx not found. Run: npm install inside your legion folder\x1b[0m');
+  process.exit(1);
+}
+
+// Verify script exists
+if (!fs.existsSync(script)) {
+  console.error('\x1b[31mError: Cannot find ' + script + '\x1b[0m');
+  process.exit(1);
+}
+
+const result = spawnSync(tsx, [script, ...process.argv.slice(2)], {
+  stdio: 'inherit',
+  cwd: process.cwd(),  // stay in the user's current directory (their project)
+  env: { ...process.env, LEGION_ROOT },
+});
+
+process.exit(result.status ?? 0);

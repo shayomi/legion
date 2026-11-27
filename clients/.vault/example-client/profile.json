@@ -1,0 +1,23 @@
+{
+  "name": "Example Corp",
+  "industry": "FinTech",
+  "size": "enterprise",
+  "employees": 2500,
+  "primary_contact": {
+    "name": "Sarah Chen",
+    "role": "CTO",
+    "email": "s.chen@example-corp.com"
+  },
+  "technical_contact": {
+    "name": "Marcus Webb",
+    "role": "Head of Engineering",
+    "email": "m.webb@example-corp.com"
+  },
+  "tech_stack": ["React", "Node.js", "PostgreSQL", "AWS", "Kubernetes"],
+  "compliance_requirements": ["SOC2 Type II", "GDPR", "PCI-DSS"],
+  "engagement_start": "2026-04-12",
+  "engagement_status": "active",
+  "contract_status": "MSA signed, SOW in review",
+  "annual_value": "confidential",
+  "notes": "Enterprise client. Highly security conscious. CTO Sarah Chen has strong opinions on architecture — involve BLUEPRINT early in all technical discussions. Requires weekly written status updates from ORBIT."
+}

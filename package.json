@@ -1,0 +1,45 @@
+{
+  "name": "legion",
+  "version": "1.0.0",
+  "description": "A 17-agent AI engineering organisation for Claude Code. I am Legion. We are many.",
+  "bin": {
+    "legion": "./bin/legion"
+  },
+  "scripts": {
+    "build": "tsc",
+    "scan": "tsx src/scripts/scan.ts",
+    "brainstorm": "tsx src/scripts/brainstorm.ts",
+    "memory": "tsx src/scripts/memory-agent.ts",
+    "daily": "tsx src/scripts/memory-agent.ts daily",
+    "sync": "tsx src/scripts/memory-agent.ts sync",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "legion",
+    "ai-agents",
+    "claude",
+    "claude-code",
+    "multi-agent",
+    "developer-tools"
+  ],
+  "author": "shayomi and Legion contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shayomi/legion.git"
+  },
+  "homepage": "https://github.com/shayomi/legion#readme",
+  "bugs": {
+    "url": "https://github.com/shayomi/legion/issues"
+  }
+}

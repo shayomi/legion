@@ -1,0 +1,9 @@
+# Every change needs a maintainer's approval before it can merge into main.
+# (Enforced by the "Require review from Code Owners" branch rule.)
+*                         @shayomi
+
+# Core system — protocol, registries, CI and hooks
+/core/                    @shayomi
+/.github/                 @shayomi
+/.claude/hooks/           @shayomi
+/.claude/settings.json    @shayomi

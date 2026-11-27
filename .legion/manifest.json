@@ -1,0 +1,32 @@
+{
+  "name": "Legion",
+  "tagline": "I am Legion. We are many.",
+  "version": "1.0.0",
+  "created": "2026-04-12",
+  "principal": "Legion",
+  "model": "claude-sonnet-4-20250514",
+  "mode": "autonomous-coordinated",
+  "agents": [
+    "cto", "frontend", "backend", "cloud", "devops",
+    "cyber", "qa", "tester", "reviewer",
+    "data-engineer", "product-manager", "solutions-architect",
+    "legal-compliance", "project-manager", "intel", "analyst", "knowledge"
+  ],
+  "memory": {
+    "obsidian": true,
+    "notion": true,
+    "local_vector_store": true,
+    "daily_logs": true,
+    "second_brain": true
+  },
+  "capabilities": [
+    "project-scanning",
+    "brainstorm-to-spec",
+    "e2e-build",
+    "agent-coordination",
+    "skill-learning",
+    "memory-sync",
+    "client-management",
+    "intel-gathering"
+  ]
+}
